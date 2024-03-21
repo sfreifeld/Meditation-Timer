@@ -1,12 +1,16 @@
-const {nextui} = require("@nextui-org/theme");
+
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./node_modules/@nextui-org/theme/dist/components/progress.js","./src/**/*.{js,jsx}"],
-  theme: {
-    extend: {},
+  content: ["./src/**/*.{js,jsx}"],
+  theme: { 
+    extend: {
+    colors: {
+      primary: '#4851fa',
+      secondary: '#bbb8cf',
+    }
   },
-  darkMode: "class",
-  plugins: [nextui()],
+},
+  plugins: [],
 }
 

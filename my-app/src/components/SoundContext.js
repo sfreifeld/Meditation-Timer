@@ -1,7 +1,7 @@
 import React, { createContext, useState, useContext } from 'react';
 import sound1 from "../assets/timer-option-1.mp3"
 
-
+//creates sound context so that user input from settings can be used in sibling component
 const defaultSound = {
      id: 1, name: 'Default', src: sound1  
 }

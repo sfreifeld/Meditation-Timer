@@ -1,16 +1,12 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
+import { Disclosure } from '@headlessui/react'
 import { NavLink } from 'react-router-dom'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 function NavBar() {
   return (
     <Disclosure as="nav" className="bg-slate-white shadow">
-      {({ open }) => (
+      {() => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 justify-between">

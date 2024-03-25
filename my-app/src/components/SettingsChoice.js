@@ -10,6 +10,8 @@ import sound5 from '../assets/timer-option-5.wav'
 import sound6 from '../assets/timer-option-6.wav'
 import sound7 from '../assets/timer-option-7.wav'
 
+
+//object holding the different timer end sounds
 const soundChoice = [
   { id: 1, name: 'Default', src: sound1  },
   { id: 2, name: 'Fairy Twinkles', src: sound2 },
@@ -21,17 +23,19 @@ const soundChoice = [
 
 ]
 
+//constructs tailwind classNames based on whether certain conditions are met
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+//Uses the useSound context to access and update the global state of the selected sound, and uses selected variable to handle local state
 function SettingsChoice() {
-  const { selectedSound,setSelectedSound } = useSound()
+  const { selectedSound, setSelectedSound } = useSound()
   const [selected, setSelected] = useState(soundChoice[0])
 
   function handleSelectedSound(sound) {
-    setSelectedSound(sound);
-  };
+    setSelectedSound(sound)
+  }
 
 
 

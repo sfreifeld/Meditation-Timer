@@ -182,7 +182,7 @@
     },
     {
       "id": "f972",
-      "Session Start Date": "03/01/2024",
+      "Session Start Date": "03/18/2024",
       "Session Start Time (MST)": "10:00:00",
       "Session End Time": "10:30:00",
       "Session Duration (min)": 30,
@@ -194,7 +194,7 @@
       "Session Start Date": "03/25/2024",
       "Session Start Time (MST)": "12:27:02",
       "Session End Time": "12:28:46",
-      "Session Duration (min)": null,
+      "Session Duration (min)": 1,
       "Session Mood Logged": "Happy",
       "Session HR": "null"
     },
@@ -204,6 +204,96 @@
       "Session Start Time (MST)": "12:29:59",
       "Session End Time": "12:32:04",
       "Session Duration (min)": 2,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "275c",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "08:55:32",
+      "Session End Time": "08:57:17",
+      "Session Duration (min)": 1,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "eeef",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "08:59:12",
+      "Session End Time": "08:59:15",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "e7ae",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "13:35:39",
+      "Session End Time": "13:35:41",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "54b4",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "13:41:48",
+      "Session End Time": "13:41:51",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "528d",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "13:47:38",
+      "Session End Time": "13:47:39",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "c662",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "13:54:40",
+      "Session End Time": "13:54:41",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "6a6e",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "13:58:38",
+      "Session End Time": "13:58:42",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "8871",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "14:02:58",
+      "Session End Time": "14:03:02",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "9e96",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "14:05:29",
+      "Session End Time": "14:05:33",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "197b",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "14:06:55",
+      "Session End Time": "14:06:59",
+      "Session Duration (min)": 0,
       "Session Mood Logged": "Happy",
       "Session HR": "null"
     }

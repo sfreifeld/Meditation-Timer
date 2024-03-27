@@ -1,0 +1,10 @@
+1. refactor to make more organized / readable
+2. fix weekly chart
+3. fix statistics design and layout
+
+
+* Add my personal data
+
+* Connect fitbit to get heartrate and sleep data
+* Make another route that shows each session log, so that you can edit (add note) or delete
+* Gamification

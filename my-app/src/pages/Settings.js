@@ -19,7 +19,7 @@ function Settings() {
           <div className="z-10 glass-container flex flex-col">
             <div className="settings-container p-10">
               <h2 className='text-4xl mb-10'>Settings</h2>
-              <div className="my-8">
+              <div className="my-6">
                 <SettingsTime />
                 <br></br><br></br>
                 <SettingsChoice />

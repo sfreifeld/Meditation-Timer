@@ -16,8 +16,11 @@ function Timer() {
     //used to directly interact with <audio> without rerender
     const audioRef = useRef(null)
 
-    //button state
+    //log button state
     const [logButton, setLogButton] = useState(false)
+
+    //mood state
+    const [mood, setMood] = useState(false)
 
     //POST variables
     const [startTime, setStartTime] = useState(null)
@@ -100,14 +103,14 @@ function Timer() {
     const progress = ((selectedDuration * 60000 - time) / (selectedDuration * 60000)) * circumference
 
     return (
-        <div className="text-3xl font-bold z-10 relative flex flex-col items-center justify-center">
+        <div className="text-3xl font-bold z-10 relative flex flex-col items-center justify-cente">
             <audio ref={audioRef} src= {selectedSound.src} />
             <svg width="220" height="220" className="m-4">
                 <circle cx="110" cy="110" r={radius} strokeWidth="10" stroke="#FFFFFF" fill="transparent"/>
                 <circle cx="110" cy="110" r={radius} strokeWidth="10" stroke="#4851fa" fill="transparent"
                         strokeDasharray={circumference} strokeDashoffset={circumference - progress}
                         transform="rotate(-90 110 110)"/>
-                <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fill="#3b82f6" fontSize="60">
+                <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fill="#4851fa" fontSize="60">
                     {Math.ceil(time / 60000)}
                 </text>
             </svg>
@@ -138,6 +141,11 @@ function Timer() {
                             .then(response => response.json())
                             .then(data => {
                                 console.log('Success:', data)
+                                window.alert("Success!")
+                                setTime(selectedDuration * 60000);
+                                setIsRunning(false); // Ensure the timer is stopped
+                                setHasStarted(false); // Reset the started flag
+                                setEndTime(null); // Clear the end time
                             })
                             .catch((error) => {
                                 console.error('Error:', error)

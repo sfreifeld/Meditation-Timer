@@ -2,7 +2,7 @@ import { Bar } from "react-chartjs-2";
 import React, { useState, useEffect } from 'react';
 
 //Creates bar chart using chart.js
-export const BarChart = () => {
+function BarChart() {
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: []
@@ -30,8 +30,8 @@ export const BarChart = () => {
           datasets: [{
             label: 'Sessions Per Month',
             data,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: 'rgba(72, 81, 250, 0.2)',
+            borderColor: 'rgba(72, 81, 250, 1)',
             borderWidth: 1,
           }]
         })
@@ -42,7 +42,7 @@ export const BarChart = () => {
   }, [])
 
   return (
-    <div className="chart-container">
+    <div className="chart-container w-1/2 m-10 shadow-md bg-white p-5 flex justify-center items-center w-1/2">
       <Bar
         data={chartData}
         options={{
@@ -60,3 +60,5 @@ export const BarChart = () => {
     </div>
   )
 }
+
+export default BarChart

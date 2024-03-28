@@ -43,10 +43,18 @@ function BarChartTwo() {
 
         const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         const todayIndex = new Date().getDay();
-        const labels = daysOfWeek.slice(todayIndex).concat(daysOfWeek.slice(0, todayIndex));
-        // Map the durations to the correct days
-        const dataCurrentWeek = daysOfWeek.map((day, i) => durations[(todayIndex + i) % 7] || 0)
-        const dataLastWeek = daysOfWeek.map((day, i) => durationsLastWeek[(todayIndex + i) % 7] || 0)
+        // Adjust the slicing to make today's day the last label
+        const labels = daysOfWeek.slice(todayIndex + 1).concat(daysOfWeek.slice(0, todayIndex + 1));
+
+        // Adjust the mapping for dataCurrentWeek and dataLastWeek to align with the new labels
+        const dataCurrentWeek = labels.map((day, i) => {
+          const index = (todayIndex + 1 + i) % 7;
+          return durations[index] || 0;
+        });
+        const dataLastWeek = labels.map((day, i) => {
+          const index = (todayIndex + 1 + i) % 7;
+          return durationsLastWeek[index] || 0;
+        });
 
         setChartData({
           labels,

@@ -8,7 +8,7 @@ export const useDuration = () => useContext(DurationContext)
 
 export const DurationProvider = ({ children }) => {
   //using this state for now for testing purposes, will switch this to 5 in prod
-  const [selectedDuration, setSelectedDuration] = useState(.05)
+  const [selectedDuration, setSelectedDuration] = useState(0.05)
 
   return (
     <DurationContext.Provider value={{ selectedDuration, setSelectedDuration }}>

@@ -296,6 +296,24 @@
       "Session Duration (min)": 0,
       "Session Mood Logged": "Happy",
       "Session HR": "null"
+    },
+    {
+      "id": "38bf",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "14:14:44",
+      "Session End Time": "14:14:52",
+      "Session Duration (min)": 0,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
+    },
+    {
+      "id": "2ad5",
+      "Session Start Date": "03/27/2024",
+      "Session Start Time (MST)": "18:39:51",
+      "Session End Time": "18:40:53",
+      "Session Duration (min)": 1,
+      "Session Mood Logged": "Happy",
+      "Session HR": "null"
     }
   ]
 }

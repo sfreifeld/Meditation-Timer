@@ -19,9 +19,6 @@ function Timer() {
     //log button state
     const [logButton, setLogButton] = useState(false)
 
-    //mood state
-    const [mood, setMood] = useState(false)
-
     //POST variables
     const [startTime, setStartTime] = useState(null)
     const [endTime, setEndTime] = useState(null)
@@ -70,7 +67,7 @@ function Timer() {
     }, [isRunning, time, selectedSound, endTime])
 
     // handles start/pause functionality of timer
-    const toggleTimer = () => {
+    function toggleTimer() {
         if (isRunning) {
             const now = new Date()
             setEndTime(now)
@@ -80,7 +77,7 @@ function Timer() {
 
 
     // formats date and time of start and end of session so that it's in a standardized format
-    const formatDateTime = (date) => {
+    function formatDateTime(date) {
         if (!date) return { date: '', time: '' };
         const dateString = date.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
         const timeString = date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
@@ -92,7 +89,7 @@ function Timer() {
     const { date: endDate, time: endTimeFormatted } = formatDateTime(endTime);
     
     // calculation for time between start and end date
-    const calculateDurationInMinutes = (start, end) => {
+    function calculateDurationInMinutes(start, end) {
         const difference = end - start
         return Math.floor(difference / 60000)
     }
